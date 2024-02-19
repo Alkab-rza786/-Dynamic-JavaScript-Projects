@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1db6d167da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-box">
+        <nav>
+            <div class="icon">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <img src="images/img1.jpg" alt="" id="image">
+        <h1 id="header">Arijit Singh</h1> 
+        <p id="para">This is the song name</p>
+        <audio id="song" controls autoplay="false">
+            <source src="music/music1.mp3" type="audio/mpeg" >
+        </audio>
+         <input type="range" value="0" id="progress">
+        <div class="audio-box">
+           <div onclick="prevPlay()  "  id="prevButton"> <i class="fa-solid fa-backward"></i></div>
+           <div onclick="playPause()  "> <i class="fa-solid fa-play play-audio " id="ctrlIcon"></i></div>
+            <div onclick="nextPlay()"  id="nextButton"> <i class="fa-solid fa-forward"></i></div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
