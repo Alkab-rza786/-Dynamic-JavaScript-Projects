@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#028db7, pink);
+    padding: 50px;
+}
+
+.todo-box {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    margin: 50px auto 20px;
+    border-radius: 15px;
+    padding: 24px;
+}
+
+.todo-box h2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.todo-box h2 img {
+    width: 50px;
+}
+
+.row {
+    border-radius: 25px;
+    background-color: rgb(235, 231, 231);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+
+}
+
+.row input {
+    flex: 1;
+    height: 45px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(235, 231, 231);
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.row button {
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: #028db7;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.list {
+    padding: 20px;
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.list li {
+    flex: 1;
+    list-style: none;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+    padding: 5px 8px 5px 30px;
+    overflow-wrap: anywhere;
+}
+
+.list li::before {
+    content: '';
+    background-image: url(images/unchecked.png);
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    /* background-color: black; */
+}
+
+.list .checked {
+    text-decoration: line-through;
+}
+
+.list .checked::before {
+    background-image: url(images/selected.png);
+    background-size: cover;
+    height: 28px;
+    width: 28px;
+
+}
+
+.list li span {
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+    /* line-height: 30px; */
+}
+
+.list li span:hover {
+    background-color: rgb(235, 231, 231);
+
+}
