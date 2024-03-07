@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, red, yellow);
+    position: relative;
+}
+
+#container .input-box {
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+}
+
+.input-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.input-row input {
+    width: 70%;
+    border: 0;
+    outline: 0;
+    border-bottom: 0.5px solid #767676;
+    font-size: 16px;
+}
+
+#btn {
+    width: 100px;
+    background: linear-gradient(90deg, yellow, red);
+    padding: 5px 15px;
+    border: 0;
+    outline: 0;
+    color: black;
+    border-radius: 5px;
+    margin: 10px auto 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+span {
+    position: absolute;
+    right: 1px;
+    font-size: 12px;
+    bottom: 0;
+    color: red;
+    right: 10px;
+}
+
+textarea {
+    padding: 2px 8px;
+    outline: 0;
+    /* border: 0; */
+    border: 0.5px solid #767676;
+    border-radius: 4px;
+
+}
+
+.box-main {
+    position: absolute;
+    top: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.box {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* color: wheat; */
+}
+
+.box1 {
+    background: linear-gradient(90deg, white, black);
+}
+
+.box2 {
+    background: linear-gradient(90deg, royalblue, brown);
+}
+
+.box3 {
+    background: linear-gradient(90deg, green, yellow);
+}
+
+.icon {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -47px auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#submit-error {
+    margin: 10px;
+}
+
+i {
+    font-size: 24px;
+}
+
+span i {
+    color: green;
+    font-size: 18px;
+    right: 0;
+}
